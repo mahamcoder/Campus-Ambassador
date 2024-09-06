@@ -1,0 +1,902 @@
+@font-face {
+    src: url("fonts/Gilroy-Medium.otf");
+    font-family: "gilroy";
+}
+
+@font-face {
+    src: url("fonts/Vanguard_CF.ttf");
+    font-family: "Vanguard CF";
+}
+
+@font-face {
+    src: url("fonts/Helvetica.ttf");
+    font-family: "helvetica";
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: "Vanguard CF";
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+
+#main {
+    min-height: 100vh;
+    width: 100vw;
+}
+
+#navbar {
+    height: 10vh;
+    width: 100vw;
+    padding: 0 5vw;
+    position: fixed;
+    z-index: 999;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    mix-blend-mode: screen;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+#navpart1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+#page1 {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #222;
+}
+
+/* #page1 h1 {
+    margin-left: 30px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 12vw;
+} */
+
+#page1 h2 {
+    margin-left: 30px;
+    font-size: 3.3vw;
+    color: rgb(255, 174, 0);
+}
+
+#capsule {
+    position: relative;
+    width: 90vw;
+    height: 48vh;
+    margin-top: 5vh;
+    border-radius: 0 350px 350px 0;
+    background-size: cover;
+    background-image: url(./img/Group\ 1.png);
+    background-position: 40% 50%;
+}
+
+#persn {
+    position: absolute;
+    bottom: 0px;
+    right: 38vw;
+    height: 52vh;
+    margin-top: 30px;
+}
+
+#png1 {
+    height: 10vw;
+    position: absolute;
+    left: 15vw;
+    top: -3.9vh;
+}
+
+#png2 {
+    height: 6.7vw;
+    position: absolute;
+    left: 2.2vw;
+    top: 17.4vh;
+}
+
+#png3 {
+    height: 10vw;
+    position: absolute;
+    left: 49vw;
+    top: 2vh;
+}
+
+#png4 {
+    height: 10vw;
+    position: absolute;
+    left: 14vw;
+    top: 30vh;
+}
+
+#png5 {
+    height: 11vw;
+    position: absolute;
+    left: 62vw;
+    top: 30vh;
+
+}
+
+/* #page1 img {
+    height: 50vh;
+    margin-top: 30px;
+} */
+
+
+
+#navpart1 a {
+    margin-left: 3vw;
+    text-transform: uppercase;
+    font-family: gilroy;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    font-size: 1vw;
+    font-weight: 600;
+}
+
+#navpart2 a {
+    margin-left: 3vw;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    font-family: gilroy;
+    text-decoration: none;
+    font-size: 1.7vw;
+    font-weight: 600;
+}
+
+#navpart1 img {
+    height: 3.5vw;
+    width: 4.5vw;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+#navpart2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+#page1 {
+    width: 100%;
+    min-height: 100vh;
+    padding: 13vh 4vw;
+    background-color: #222;
+}
+
+#page1 h1 {
+    font-family: "Vanguard CF";
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 12vw;
+    line-height: 10vw;
+    margin-left: 30px;
+}
+
+#page2 {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+#page2text {
+    font-size: 12vw;
+    font-weight: 900;
+    font-family: "Vanguard CF";
+    text-transform: uppercase;
+    line-height: 10.5vw;
+    text-align: left;
+}
+
+#page2div h3 {
+    font-family: "Vanguard CF";
+    font-size: 1.9vw;
+    line-height: 2vw;
+    font-weight: 900;
+}
+
+#page2>a {
+    text-decoration: none;
+}
+
+#page2button {
+    margin-top: 2vh;
+    width: 11.8vw;
+    height: 2.5vw;
+    border-radius: 50px;
+    cursor: pointer;
+    color: #222;
+    border: 1.6px solid #222;
+    background-color: transparent;
+    font-size: 0.9vw;
+    font-weight: 600;
+    -webkit-transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.7s;
+    -o-transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.7s;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.7s;
+}
+
+#page2button:hover {
+    background-color: #222;
+    color: white;
+}
+
+@media(max-width: 600px) {
+    #navbar {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+    }
+
+    #navpart1 a {
+        margin-left: 3.5vw;
+        text-transform: uppercase;
+        font-family: gilroy;
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        border-bottom: 1px solid rgb(255, 255, 255);
+        font-size: 12px;
+        font-weight: 600;
+    }
+
+    #navpart2 {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    #navpart2 a {
+        margin-left: 3vw;
+        text-transform: uppercase;
+        color: rgb(255, 255, 255);
+        font-family: gilroy;
+        text-decoration: none;
+        font-size: 10px;
+
+        font-weight: 600;
+    }
+
+    #navpart1 img {
+        height: 5vw;
+    }
+
+    #capsule {
+        position: relative;
+        width: 90vw;
+        height: 42vh;
+        border-radius: 0 350px 350px 0;
+        margin-top: 12vh;
+    }
+
+    #persn {
+        position: absolute;
+        bottom: 0px;
+        right: 18vw;
+        height: 40vh;
+        z-index: 99;
+    }
+
+    #png1 {
+        height: 73px;
+        position: absolute;
+        left: 15px;
+        top: -28px;
+    }
+
+    #png2 {
+        height: 43px;
+        position: absolute;
+        left: -1px;
+        top: 110px;
+    }
+
+    #png3 {
+        height: 76px;
+        position: absolute;
+        left: 153px;
+        top: 20px;
+    }
+
+    #png4 {
+        height: 70px;
+        position: absolute;
+        left: 268px;
+        top: 130px;
+        z-index: 999;
+    }
+
+    #png5 {
+        height: 75px;
+        position: absolute;
+        left: 62vw;
+        top: 30vh;
+
+    }
+
+
+    #page1 h1 {
+        font-size: 70px;
+        line-height: 65px;
+        margin-left: 10px;
+    }
+
+    #page1 h2 {
+        margin-left: 10px;
+        font-size: 21px;
+    }
+
+    #page2text {
+        font-size: 100px;
+        line-height: 90px;
+    }
+
+    #page2div {
+        text-align: center;
+    }
+
+    #page2div h3 {
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    #page2button {
+        font-size: 11px;
+        width: 105px;
+        height: 25px;
+    }
+}
+
+#page3 {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    background-color: #222;
+}
+
+#page3part1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    color: #fff;
+    height: 46vh;
+}
+
+#page3part1heading {
+    font-size: 11vw;
+    font-weight: 900;
+    font-family: "Vanguard CF";
+    text-transform: uppercase;
+    line-height: 10vw;
+    text-align: left;
+}
+
+#page3part1heading span img {
+    height: 8.2vw;
+
+}
+
+#page3part1button {
+    margin-top: 2vh;
+    width: 13.5vw;
+
+    height: 2.7vw;
+    border-radius: 50px;
+    cursor: pointer;
+    color: white;
+    border: 1.6px solid rgb(255, 255, 255);
+    background-color: transparent;
+    font-size: 0.9vw;
+    font-weight: 600;
+    -webkit-transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.7s;
+    -o-transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.7s;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.7s;
+}
+
+#page3part1button:hover {
+    background-color: white;
+    color: #222;
+}
+
+#page3part1div {
+    margin-top: 6vh;
+}
+
+#page3part1div h3 {
+    font-family: gilroy;
+    font-size: 1.2vw;
+    line-height: 1.6vw;
+    font-weight: 400;
+}
+
+#page3part2 {
+    height: 54vh;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+}
+
+#page3part2::-webkit-scrollbar {
+    display: none;
+}
+
+.card {
+    width: 30vw;
+    height: 54vh;
+    display: inline-block;
+    position: relative;
+}
+
+.card img {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center;
+    object-position: center;
+    mix-blend-mode: hard-light;
+}
+
+.card h1 {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    color: black;
+    z-index: 999;
+    font-family: Vanguard CF;
+    font-size: 1.9vw;
+
+}
+
+#card1 {
+    background-color: rgb(255, 242, 0);
+}
+
+#card2 {
+    background-color: rgb(255, 128, 168);
+}
+
+#card3 {
+    background-color: rgb(255, 127, 58);
+}
+
+#card4 {
+    background-color: rgb(83, 83, 83);
+}
+
+#card5 {
+    background-color: rgb(255, 180, 105);
+}
+
+@media(max-width: 600px) {
+    #page3part1heading {
+        font-size: 100px;
+        font-weight: 900;
+        font-family: "Vanguard CF";
+        text-transform: uppercase;
+        line-height: 10vw;
+        text-align: left;
+    }
+
+
+    #page3part1div {
+        margin-top: -10vh;
+        text-align: center;
+    }
+
+    #page3part1div h3 {
+        font-family: gilroy;
+        font-size: 11px;
+        line-height: 11px;
+        font-weight: 400;
+    }
+
+    #page3part1heading span img {
+        height: 76px;
+        margin-left: -6px;
+    }
+
+    #page3part1button {
+        width: 20vw;
+        height: 2.7vh;
+        border-radius: 50px;
+        cursor: pointer;
+        color: white;
+        border: 1.6px solid rgb(255, 255, 255);
+        background-color: transparent;
+        font-size: 9px;
+        font-weight: 200;
+        -webkit-transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.7s;
+        -o-transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.7s;
+        transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.7s;
+    }
+
+    .card {
+        width: 45vw;
+        height: 54vh;
+        display: inline-block;
+        position: relative;
+    }
+
+    .card>h1 {
+        font-size: 14px;
+        position: absolute;
+        top: 10px;
+    }
+}
+
+#page4 {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    padding: 9vh 5vw 6vh 5vw;
+}
+
+#girldiv {
+    height: 63vh;
+    width: 90vw;
+    background-image: url("https://www.nisai.com/wp-content/uploads/2023/06/eb88096ab7fccacc1129831015a273cdea0fafc17c062360f2b8c9acbb0a-2-1024x440.png");
+    background-size: cover;
+    background-position:center;
+    
+}
+
+#page4bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    height: 20vh;
+    width: 90vw;
+    margin-top: 3vh;
+}
+
+#page4bottom>h1 {
+    font-size: 7.8vw;
+    font-weight: 300;
+    font-family: helvetica;
+}
+
+#page4bottompart2>h3 {
+    font-size: 2.5vw;
+    font-weight: 400;
+    font-family: helvetica;
+}
+
+#page4bottompart2>p {
+    font-family: helvetica;
+    font-size: 1vw;
+    margin-top: 5px;
+}
+
+@media(max-width: 600px) {
+    #page4 {
+        height: 100vh;
+        width: 100vw;
+        position: relative;
+        padding: 5vh 5vw 2vh 5vw;
+    }
+
+    #girldiv {
+        height: 59vh;
+        width: 90vw;
+        background-position: 40% 50%;
+    }
+
+    #page4bottom {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        height: 28vh;
+        width: 90vw;
+        margin-top: 3vh;
+    }
+
+    #page4bottom>h1 {
+        font-size: 55px;
+        font-weight: 500;
+    }
+
+    #page4bottompart2>h3 {
+        font-size: 17px;
+        font-weight: 600;
+    }
+
+    #page4bottompart2>p {
+        font-size: 9px;
+        margin-top: 5px;
+    }
+}
+
+#page5 {
+    height: 100vh;
+    width: 100vw;
+    background-color: #222;
+    position: relative;
+    padding: 6vh 4vw 2vh 4vw;
+    color: #fbfbfb;
+}
+
+#page5part1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    height: 32vh;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+}
+
+#page5heading {
+    font-size: 9.5vw;
+    font-family: helvetica;
+    font-weight: 500;
+    line-height: 7.6vw;
+}
+
+#page5part1>p {
+    width: 13vw;
+    text-align: right;
+    font-family: helvetica;
+    font-size: 14px;
+}
+
+#page5part2 {
+    height: 60vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    position: relative;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+#page5part2div>p {
+    font-size: 1.01vw;
+    width: 20vw;
+    font-family: helvetica;
+}
+
+#page5part2div>#arrow i {
+    font-size: 13.6vw;
+    font-weight: 100;
+
+    position: relative;
+    bottom: -4vh;
+    left: -4vw;
+}
+
+#page5img {
+    height: 60vh;
+    width: 45vw;
+    position: relative;
+}
+
+#part5img>img {
+    height: 58.5vh;
+    width: 50vw;
+    -o-object-position: center;
+    object-position: center;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+@media(max-width: 600px) {
+    #page5 {
+        height: 100vh;
+        width: 100vw;
+        background-color: #222;
+        position: relative;
+        padding: 4vh 4vw 2vh 4vw;
+        color: #fbfbfb;
+    }
+
+    #page5heading {
+        font-size: 75px;
+        line-height: 70px;
+        text-align: left;
+    }
+
+    #page5part1>p {
+        width: 55vw;
+        text-align: left;
+        font-size: 12px;
+    }
+
+    #page5img {
+        height: 60vh;
+        width: 45vw;
+        position: relative;
+    }
+
+    #page5part2div>p {
+        font-size: 10px;
+        width: 55vw;
+        font-family: helvetica;
+    }
+
+    #page5part2div>#arrow i {
+        font-size: 18.6vw;
+        font-weight: 100;
+        position: relative;
+        bottom: -1.5vh;
+        left: -4vw;
+    }
+
+    #page5img {
+        height: 35vh;
+        width: 75vw;
+        position: relative;
+    }
+
+    #part5img>img {
+        height: 35vh;
+        width: 90vw;
+        -o-object-position: center;
+        object-position: center;
+        -o-object-fit: cover;
+        object-fit: cover;
+    }
+}
+  footer {
+    background-color: rgb(255, 242, 0);
+    color: #090909;
+    padding: 50px 20px;
+    margin-top: 10px;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .footer-logo,
+  .footer-links,
+  .footer-contact,
+  .footer-social {
+    flex: 1;
+    margin: 15px;
+    min-width: 200px;
+  }
+  
+  .footer-logo h2 {
+    font-size: 54px;
+    margin-bottom: 15px;
+  }
+  
+  .footer-logo p {
+    font-size: 20px;
+    line-height: 1.8;
+  }
+  
+  .footer-links h3,
+  .footer-contact h3,
+  .footer-social h3 {
+    font-size: 40px;
+    margin-bottom: 15px;
+  }
+  
+  .footer-links ul,
+  .footer-contact ul,
+  .footer-social ul {
+    font-size: 20px;
+    color:rgb(69, 68, 68);
+    list-style: none;
+  }
+
+  .footer-bottom {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 24px;
+    border-top: 1px solid #444;
+    padding-top: 15px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-logo,
+    .footer-links,
+    .footer-contact,
+    .footer-social {
+      text-align: center;
+      margin: 20px 0;
+    }
+  }
+  
